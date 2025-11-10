@@ -60,11 +60,11 @@ class BarrierUnknownException: public BarrierException {
 //A standard barrier
 class Barrier {
   public:
-    Barrier(int) throw(BarrierException);
-    ~Barrier() throw(BarrierException);
+    Barrier(int);
+    ~Barrier();
 
     //Wait at a barrier, will return true for exactly one thread, false for all other threads
-    bool Wait() throw(BarrierException);
+    bool Wait();
     //Get number of threads required to enter the barrier
     const int nThreads() const;
 

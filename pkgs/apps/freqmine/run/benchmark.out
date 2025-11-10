@@ -1,0 +1,23 @@
+PARSEC Benchmark Suite Version 3.0-beta-20120904
+transaction number is 3
+32
+192
+736
+2100
+4676
+8246
+11568
+12916
+11450
+8009
+4368
+1820
+560
+120
+16
+1
+the data preparation cost 0.003636 seconds, the FPgrowth cost 0.002738 seconds
+
+real	0m0.009s
+user	0m0.007s
+sys	0m0.001s

@@ -1,0 +1,36 @@
+Running
+/parsec/pkgs/netapps/netferret/inst/amd64-linux.gcc/bin/client queries 1 output.txt &
+/parsec/pkgs/netapps/netferret/inst/amd64-linux.gcc/bin/server corel lsh 5 5 1
+PARSEC Benchmark Suite Version 3.0-beta-20120904
+
+============================================================
+  Enter PARSEC TCPIP ROI 
+============================================================
+(1,1)
+
+------------------------------------------------------------
+      Execution Statistics of u-TCP/IP Stack 
+------------------------------------------------------------
+There are 12 threads, 6 involved to u-TCP/IP stack
+(u-TCP/IP_Threads) / (Total_Threads) = 50.00%
+
+ROI_RUN_TIME =   0.01s
+
+     THREAD_TYPE         ACTIVE_TIME           ACTIVE(%)
+        Rx_Tcpip              0.000s                2.04
+         Tx_Link              0.000s                0.42
+         Rx_Link              0.000s                0.70
+           Timer              0.000s                2.41
+          Socket              0.000s                0.00
+          Socket              0.000s                0.00
+------------------------------------------------------------
+
+============================================================
+  Exit PARSEC TCPIP ROI 
+============================================================
+
+QUERY TIME: 0.023 seconds
+
+real	0m0.027s
+user	0m0.021s
+sys	0m0.019s

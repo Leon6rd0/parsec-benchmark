@@ -1,0 +1,7 @@
+PARSEC Benchmark Suite Version 3.0-beta-20120904
+ferret: /parsec/pkgs/apps/ferret/obj/amd64-linux.gcc/benchmark/ferret-pthreads.c:392: t_out: Assertion `obj != NULL' failed.
+/parsec/bin/parsecmgmt: line 1154: 85247 Aborted                 (core dumped) /parsec/pkgs/apps/ferret/inst/amd64-linux.gcc/bin/ferret corel lsh queries 5 5 1 output.txt
+
+real	0m0.263s
+user	0m0.006s
+sys	0m0.006s

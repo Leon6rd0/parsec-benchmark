@@ -82,15 +82,15 @@ class Mutex: public LockType {
   friend class Condition;
 
   public:
-    Mutex() throw(MutexException);
-    ~Mutex() throw(MutexException);
+    Mutex() ;
+    ~Mutex() ;
 
     //Enter a critical region
-    void Lock() throw(MutexException);
+    void Lock();
     //Leave a critical region
-    void Unlock() throw(MutexException);
+    void Unlock();
     //Try to acquire the lock, return true if successful
-    bool TryLock() throw(MutexException);
+    bool TryLock();
 
   private:
 #if defined(HAVE_LIBPTHREAD)

@@ -66,19 +66,19 @@ class RWLockUnknownException: public RWLockException {
 //A standard rwlock
 class RWLock: public RWLockType {
   public:
-    RWLock() throw(RWLockException);
-    ~RWLock() throw(RWLockException);
+    RWLock();
+    ~RWLock();
 
     //Enter a critical region for reading
-    void ReadLock() throw(RWLockException);
+    void ReadLock();
     //Try to acquire the lock for reading, return true if successful
-    bool TryReadLock() throw(RWLockException);
+    bool TryReadLock();
     //Enter a critical region for writing
-    void WriteLock() throw(RWLockException);
+    void WriteLock();
     //Try to acquire the lock for writing, return true if successful
-    bool TryWriteLock() throw(RWLockException);
+    bool TryWriteLock();
     //Leave a critical region
-    void Unlock() throw(RWLockException);
+    void Unlock();
 
   private:
     pthread_rwlock_t l;

@@ -13,7 +13,7 @@ ifeq "$(ostype)" "solaris"
     CFLAGS += -std=gnu99
 endif
 
-LIBS += -lm -lpthread
+LIBS += -lcrypto -lm -lpthread
 
 LIB_UPTCP= -luptcp
 LIB_UPTCP_SIM= -luptcp.sim

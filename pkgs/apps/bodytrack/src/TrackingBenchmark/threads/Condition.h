@@ -62,17 +62,17 @@ class CondUnknownException: public CondException {
 //A standard condition variable
 class Condition {
   public:
-    Condition(Mutex &) throw(CondException);
-    ~Condition() throw(CondException);
+    Condition(Mutex &);
+    ~Condition();
 
     //Wake up exactly one thread, return number of threads currently waiting (before wakeup)
     //If no more threads are waiting, the notification is lost
-    int NotifyOne() throw(CondException);
+    int NotifyOne();
     //Wake up all threads, return number of threads currently waiting (before wakeup)
-    int NotifyAll() throw(CondException);
+    int NotifyAll();
 
     //Wait until either NotifyOne() or NotifyAll() is executed
-    void Wait() throw(CondException, MutexException);
+    void Wait();
   private:
     //the mutex associated with the condition variable
     Mutex *M;

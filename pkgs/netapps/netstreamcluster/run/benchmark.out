@@ -1,0 +1,20 @@
+Running
+/parsec/pkgs/netapps/netstreamcluster/inst/amd64-linux.gcc/bin/client 1 10 10 1 &
+/parsec/pkgs/netapps/netstreamcluster/inst/amd64-linux.gcc/bin/server 2 5 1 10 10 5 none output.txt 1
+PARSEC Benchmark Suite Version 3.0-beta-20120904
+[Server] 1 clients are connected
+
+============================================================
+  Enter PARSEC TCPIP ROI 
+============================================================
+read 10 points
+[Client:0]: Sending ...
+[Client:0] send bytes = 40
+[Client:0] Send data to server ok!
+Receive Ack from Server
+[0] Data size = 40B, time =  0.007423s, BW =    0.005MB/s
+Send Ack
+
+real	0m0.265s
+user	0m0.040s
+sys	0m0.100s

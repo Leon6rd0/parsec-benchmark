@@ -1,0 +1,6 @@
+PARSEC Benchmark Suite Version 3.0-beta-20120904
+/work/home/ern/benchmark-local/parsec-benchmark/bin/parsecmgmt: 第 1154 行： 1887213 段错误               （核心已转储） /work/home/ern/benchmark-local/parsec-benchmark/pkgs/apps/facesim/inst/amd64-linux.gcc/bin/facesim -h
+
+real	0m1.186s
+user	0m0.002s
+sys	0m0.001s

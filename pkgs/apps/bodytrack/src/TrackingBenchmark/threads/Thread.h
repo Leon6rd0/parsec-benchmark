@@ -59,7 +59,7 @@ class Thread {
     unsigned int t_id;
 #endif //HAVE_LIBPTHREAD
   public:
-    Thread(Runnable &) throw(ThreadCreationException);
+    Thread(Runnable &);
 
     //Wait until Thread object has finished
     void Join();

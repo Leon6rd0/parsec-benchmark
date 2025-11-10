@@ -27,14 +27,14 @@ case "${OSTYPE}" in
   export SFW_HOME="/usr/sfw"
 
   # CC_HOME is installation root of the C compiler
-  export CC_HOME="/usr/local/gcc-4.2.4"
+  export CC_HOME="/usr/bin/cc"
   #export CC_HOME="/usr/sfw"
   # BINUTIL_HOME is installation root of the GNU binutils
   export BINUTIL_HOME="/usr/sfw"
   # GNUTOOL_HOME is installation root of the GNU tools
   export GNUTOOL_HOME="${SFW_HOME}"
   # BINARY_PREFIX is the string which is used as prefix for the GNU binaries
-  export BINARY_PREFIX="g"
+  export BINARY_PREFIX=""
 ;;
 *)
   # Linux + default case

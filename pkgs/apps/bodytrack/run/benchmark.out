@@ -1,0 +1,11 @@
+PARSEC Benchmark Suite Version 3.0-beta-20120904
+Threading with Posix Threads
+Number of threads : 1
+Using dataset : sequenceB_1/
+5 particles with 1 annealing layers
+
+Processing frame 0
+
+real	0m0.060s
+user	0m0.052s
+sys	0m0.008s
