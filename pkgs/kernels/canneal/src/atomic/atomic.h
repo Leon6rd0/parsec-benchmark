@@ -46,4 +46,3 @@
 
 #endif /* _ATOMIC_H_ */
 
-#endif /* _ATOMIC_H_ */
