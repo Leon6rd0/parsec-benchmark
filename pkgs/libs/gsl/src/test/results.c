@@ -25,13 +25,7 @@
 #include <gsl/gsl_sys.h>
 #include <gsl/gsl_machine.h>
 
-#if HAVE_VPRINTF
-#ifdef STDC_HEADERS
 #include <stdarg.h>
-#else
-#include <varargs.h>
-#endif
-#endif
 
 #include <gsl/gsl_test.h>
 
@@ -76,7 +70,7 @@ update (int s)
 }
 
 void
-gsl_test (int status, const char *test_description,...)
+gsl_test (int status, const char *test_description,...) /* Function signature is already correct */
 {
   if (!tests) initialise();
 
@@ -86,18 +80,14 @@ gsl_test (int status, const char *test_description,...)
     {
       printf (status ? "FAIL: " : "PASS: ");
 
-#if HAVE_VPRINTF
+      /* Assume vprintf is available on modern systems */
       {
         va_list ap;
-#ifdef STDC_HEADERS
-        va_start (ap, test_description);
-#else
-        va_start (ap);
-#endif
+        /* Always use the stdarg.h way */
+        va_start (ap, test_description); /* Correctly pass the last fixed argument */
         vprintf (test_description, ap);
         va_end (ap);
       }
-#endif
 
       if (status && !verbose)
         printf(" [%u]", tests);
@@ -106,7 +96,6 @@ gsl_test (int status, const char *test_description,...)
       fflush (stdout);
     }
 }
-
 
 void
 gsl_test_rel (double result, double expected, double relative_error,
