@@ -25,7 +25,7 @@
 #if defined(__riscv) && (__riscv_xlen == 64)
 #  include "riscv64/atomic.h" 
 
-#if defined(__i386__) || defined(__i386) || defined(i386) || defined(__I386__)
+#elif defined(__i386__) || defined(__i386) || defined(i386) || defined(__I386__)
 #  include "i386/atomic.h"
 #elif defined(__amd64__) || defined(__amd64) || defined(amd64) || defined(__AMD64__)
 #  include "amd64/atomic.h"
